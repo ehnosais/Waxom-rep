@@ -4,7 +4,9 @@
   "description": "Site on bootstrap 4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "author": "ehnosais",
   "license": "ISC",
