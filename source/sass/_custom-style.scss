@@ -1,0 +1,62 @@
+/* -------------------------------------------------------------------------- */
+/*                                   General                                  */
+/* -------------------------------------------------------------------------- */
+
+body {
+  min-width: 320px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- Page-header ------------------------------ */
+
+// page-header
+@media (min-width: 992px) {
+  .page-header {
+    position: absolute;
+    width: 100%;
+    z-index: 30;
+  }
+}
+
+/* --------------------------------- Navbar --------------------------------- */
+
+// navbar
+.navbar {
+  background-color: #000000;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    background-color: transparent;
+  }
+}
+
+// navbar-brand
+.navbar-brand__logo-text {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    Main                                    */
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------- Top slider ---------------------------- */
+
+// container-fluid
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
