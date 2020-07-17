@@ -36,6 +36,19 @@ gulp.task('style', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('bootstrap', function () {
+  return gulp.src('source/sass/custom-bootstrap.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('build/css'))
+    .pipe(minify())
+    .pipe(rename('custom-bootstrap.min.css'))
+    .pipe(gulp.dest('build/css'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('html', function () {
   return gulp.src('source/*.html')
     .pipe(posthtml([
@@ -50,6 +63,7 @@ gulp.task('serve', function() {
     server: {baseDir: 'build', directory: true}
   });
   gulp.watch('source/**/*.scss', gulp.parallel('style'));
+  gulp.watch('source/**/*.scss', gulp.parallel('bootstrap'));
   gulp.watch('source/**/*.html', gulp.parallel('html'));
 });
 
@@ -61,8 +75,7 @@ gulp.task('copy', function () {
   return gulp.src([
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
-    'source/js/**',
-    'source/css/**'
+    'source/js/**'
   ], {
     base: 'source'
   })
@@ -112,6 +125,7 @@ gulp.task('build',
     'clean',
     'copy',
     'style',
+    'bootstrap',
     'html'
   )
 );
