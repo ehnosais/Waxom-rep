@@ -17,6 +17,14 @@ body {
   padding-right: 0;
 }
 
+// btn
+@media (min-width: 992px) {
+  .btn {
+    padding: 15px 35px;
+  }
+}
+
+
 /* -------------------------------------------------------------------------- */
 /*                                   Header                                   */
 /* -------------------------------------------------------------------------- */
@@ -48,7 +56,7 @@ body {
 
 // navbar-brand
 .navbar-brand__logo-text {
-  font-family: 'Raleway', sans-serif;
+  font-family: $secondary-font;
   font-style: normal;
   font-size: 34px;
   font-weight: 400;
@@ -75,7 +83,7 @@ body {
 
 // carousel-pre-title
 .carousel-caption__pre-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: $secondary-font;
   font-style: normal;
   font-size: 20px;
   font-weight: 500;
@@ -96,7 +104,7 @@ body {
 
 // carousel-title
 .carousel-caption__title {
-  font-family: 'Raleway', sans-serif;
+  font-family: $secondary-font;
   font-style: normal;
   font-size: 22px;
   font-weight: 800;
@@ -123,7 +131,82 @@ body {
 
 // carousel-caption__text
 .carousel-caption__text {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 300;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+// carousel-caption__button
+.carousel-caption__button {
+  font-family: $secondary-font;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 800;
+
+  background-color: $theme-color;
+  border-color: $theme-color;
+  box-shadow: 0 2px 0 0 $theme-color-hover;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption__button {
+    box-shadow: 0 4px 0 0 $theme-color-hover;
+  }
+}
+
+.carousel-caption__button:hover,
+.carousel-caption__button:focus {
+  background-color: $theme-color-hover;
+  border-color: $theme-color-hover;
+  box-shadow: none;
+}
+
+.carousel-caption__button:active {
+  background-color: $theme-color-active;
+  border-color: $theme-color-active;
+  box-shadow: none;
+}
+
+// carousel-control
+.carousel-control__icon {
+  width: 20px;
+  height: 40px;
+}
+
+@media (min-width: 1200px) {
+  .carousel-control__icon {
+    width: 40px;
+    height: 72px;
+  }
+}
+
+.carousel-control__icon:hover,
+.carousel-control__icon:focus {
+  fill: #998675;
+}
+
+// carousel-indicators
+.carousel-indicators li {
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+}
+
+.carousel-indicators li.active {
+  width: 14px;
+  height: 14px;
+
+  border: 2px solid $theme-color;
+  background-color: transparent;
 }
