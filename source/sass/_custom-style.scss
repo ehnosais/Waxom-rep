@@ -11,6 +11,11 @@ body {
   font-style: normal;
 }
 
+// container-fluid
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   Header                                   */
@@ -26,6 +31,7 @@ body {
     z-index: 30;
   }
 }
+
 
 /* --------------------------------- Navbar --------------------------------- */
 
@@ -53,10 +59,71 @@ body {
 /*                                    Main                                    */
 /* -------------------------------------------------------------------------- */
 
-/* ----------------------------- Top slider ---------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 Top slider                                 */
+/* -------------------------------------------------------------------------- */
 
-// container-fluid
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+/* ---------------------------- Carousel-caption ---------------------------- */
+
+// carousel-caption
+.carousel-caption {
+  top: 50%;
+  bottom: auto;
+
+  transform: translateY(-50%);
+}
+
+// carousel-pre-title
+.carousel-caption__pre-title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption__pre-title  {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-caption__pre-title {
+    font-size: 36px;
+  }
+}
+
+// carousel-title
+.carousel-caption__title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: capitalize;;
+}
+
+@media (min-width: 576px) {
+  .carousel-caption__title  {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-caption__title  {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-caption__title {
+    font-size: 52px;
+  }
+}
+
+// carousel-caption__text
+.carousel-caption__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
 }
