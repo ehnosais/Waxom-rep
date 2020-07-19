@@ -327,7 +327,7 @@ body {
 
   p {
     font-family: $secondary-font;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 400;
     color: #ffffff;
 
@@ -337,10 +337,22 @@ body {
   }
 
   small {
-    font-size: 18px;
+    font-size: 12px;
     color: #615855;
   }
 
+}
+
+@media (min-width: 992px) {
+  .themes__footer {
+    p {
+      font-size: 28px;
+    }
+
+    small {
+      font-size: 18px;
+    }
+  }
 }
 
 /* -------------------------------- Projects -------------------------------- */
@@ -350,4 +362,114 @@ body {
   font-size: 16px;
 }
 
+// projects__btn
+.projects__btn {
+  font-size: 14px;
+  color: $secondary-color;
+  border-color: #ebebeb;
+}
+
+// card-title
+.card-title {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 500;
+  color: #c7b299;
+}
+
+// card
+.card {
+  background-color: #fbfaf8;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #362f2d;
+
+    .card-body {
+
+      &::before {
+        border-bottom-color: #362f2d;
+      }
+    }
+
+    .card-title {
+      color: #ffffff;
+    }
+
+    .card-text {
+      color: #c7b299;
+    }
+
+    .card-img-overlay {
+      display: block;
+    }
+  }
+}
+
+// card-body
+.card-body {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -29px;
+    left: 20px;
+
+    width: 0;
+    height: 0;
+
+    border: 15px solid #fbfaf8;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+}
+
+// card__img-wrapper
+.card__img-wrapper {
+  position: relative;
+}
+
+// card-img-overlay
+.card-img-overlay {
+  display: none;
+
+  background-color: rgba($color: #111111, $alpha: 0.7);
+}
+
+// card__tools
+.card__tools {
+  position: absolute;
+  top: 53%;
+  left: 52%;
+
+  transform: translate(-50%, -50%);
+}
+
+// card__tools-link
+.card__tools-link {
+
+  &:hover,
+  &:focus {
+
+    svg {
+      fill: $theme-color-hover;
+    }
+  }
+}
+
+// card__tools-zoom
+.card__tools-zoom {
+
+
+  &:hover,
+  &:focus {
+
+    svg {
+      fill: $theme-color-hover;
+    }
+  }
+}
 

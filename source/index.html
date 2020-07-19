@@ -200,7 +200,7 @@
             <img class="img-fluid" src="img/browser-theme.png" alt="Theme slide 3">
           </div>
         </div>
-        <div class="themes__footer py-50">
+        <div class="themes__footer py-20 py-lg-50">
           <div class="container">
             <div class="row mx-0 align-items-center">
               <div class="col-12 col-md-8 text-center text-md-left mb-20 mb-md-0">
@@ -217,87 +217,195 @@
 
 <!-- ------------------------- Section projects -------------------------- -->
 
-      <section class="projects mb-40 mb-lg-80">
+      <section class="projects mb-60 mb-lg-80">
         <div class="container">
           <h2 class="section-title text-capitalize">Our latest projects.</h2>
           <p class="projects__text mb-30">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi nemo libero deleniti dolorem. Ratione, recusandae.</p>
           <!-- Category buttons -->
           <div class="row flex-column flex-sm-row justify-content-center mb-40">
             <div class="col-auto">
-              <button class="btn btn-outline-secondary w-100 mb-10 mb-lg-0 active" type="button">All</button>
+              <button class="projects__btn btn btn-outline-secondary text-capitalize w-100 mb-10 mb-lg-0 active" type="button">All</button>
             </div>
             <div class="col-auto">
-              <button class="btn btn-outline-secondary mb-10 mb-lg-0  w-100" type="button">Web design</button>
+              <button class="projects__btn btn btn-outline-secondary text-capitalize mb-10 mb-lg-0  w-100" type="button">Web design</button>
             </div>
             <div class="col-auto">
-              <button class="btn btn-outline-secondary mb-10 mb-lg-0  w-100" type="button">Mobile app</button>
+              <button class="projects__btn btn btn-outline-secondary mb-10 mb-lg-0 text-capitalize w-100" type="button">Mobile app</button>
             </div>
             <div class="col-auto">
-              <button class="btn btn-outline-secondary mb-10 mb-lg-0 w-100" type="button">Illustration</button>
+              <button class="projects__btn btn btn-outline-secondary  text-capitalizemb-10 mb-lg-0 w-100" type="button">Illustration</button>
             </div>
             <div class="col-auto">
-              <button class="btn btn-outline-secondary w-100" type="button">Photography</button>
+              <button class="projects__btn btn btn-outline-secondary text-capitalize w-100" type="button">Photography</button>
             </div>
           </div>
           <!-- Projects cards -->
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
-            <div class="col-auto">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center mb-10">
+            <div class="col-auto mb-40">
               <div class="card">
-                <img class="card-img-top" src="img/pr-1.jpg" width="370" height="237" alt="Project 1">
-                <div class="card-body">
+                <div class="card__img-wrapper">
+                  <img class="img-fluid" src="img/pr-1.jpg"  alt="Project 1">
+                  <div class="card-img-overlay w-100 h-100">
+                    <div class="card__tools">
+                      <a class="card__tools-link" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.625" height="24.62" viewBox="0 0 24.625 24.62" fill="#ffffff">
+                          <path d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z" transform="translate(-920.688 -2641.72)"/>
+                        </svg>
+                        <span class="sr-only">Image link</span>
+                      </a>
+                      <button class="card__tools-zoom btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47" viewBox="0 0 25.157 24.47" fill="#ffffff">
+                          <path d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z" transform="translate(-974.781 -2641.19)"/>
+                        </svg>
+                        <span class="sr-only">Image zoom</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-left">
                   <h3 class="card-title">Consectetur adipisicing elit</h3>
-                  <small class="card-text">Photography, nature</small>
+                  <span class="card-text text-capitalize">Photography, nature</span>
                 </div>
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto mb-40">
               <div class="card">
-                <img class="card-img-top" src="img/pr-2.jpg" width="370" height="237" alt="Project 2">
-                <div class="card-body">
+                <div class="card__img-wrapper">
+                  <img class="img-fluid" src="img/pr-2.jpg"  alt="Project 2">
+                  <div class="card-img-overlay w-100 h-100">
+                    <div class="card__tools">
+                      <a class="card__tools-link" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.625" height="24.62" viewBox="0 0 24.625 24.62" fill="#ffffff">
+                          <path d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z" transform="translate(-920.688 -2641.72)"/>
+                        </svg>
+                        <span class="sr-only">Image link</span>
+                      </a>
+                      <button class="card__tools-zoom btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47" viewBox="0 0 25.157 24.47" fill="#ffffff">
+                          <path d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z" transform="translate(-974.781 -2641.19)"/>
+                        </svg>
+                        <span class="sr-only">Image zoom</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-left">
                   <h3 class="card-title">Modi nemo libero</h3>
-                  <small class="card-text">Graphic design, mock-up</small>
+                  <span class="card-text text-capitalize">Graphic design, mock-up</span>
                 </div>
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto mb-40">
               <div class="card">
-                <img class="card-img-top" src="img/pr-3.jpg" width="370" height="237" alt="Project 3">
-                <div class="card-body">
+                <div class="card__img-wrapper">
+                  <img class="img-fluid" src="img/pr-3.jpg"  alt="Project 3">
+                  <div class="card-img-overlay w-100 h-100">
+                    <div class="card__tools">
+                      <a class="card__tools-link" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.625" height="24.62" viewBox="0 0 24.625 24.62" fill="#ffffff">
+                          <path d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z" transform="translate(-920.688 -2641.72)"/>
+                        </svg>
+                        <span class="sr-only">Image link</span>
+                      </a>
+                      <button class="card__tools-zoom btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47" viewBox="0 0 25.157 24.47" fill="#ffffff">
+                          <path d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z" transform="translate(-974.781 -2641.19)"/>
+                        </svg>
+                        <span class="sr-only">Image zoom</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-left">
                   <h3 class="card-title">Deleniti dolorem</h3>
-                  <small class="card-text">Photography, holiday</small>
+                  <span class="card-text text-capitalize">Photography, holiday</span>
                 </div>
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto mb-40">
               <div class="card">
-                <img class="card-img-top" src="img/pr-4.jpg" width="370" height="237" alt="Project 4">
-                <div class="card-body">
+                <div class="card__img-wrapper">
+                  <img class="img-fluid" src="img/pr-4.jpg"  alt="Project 4">
+                  <div class="card-img-overlay w-100 h-100">
+                    <div class="card__tools">
+                      <a class="card__tools-link" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.625" height="24.62" viewBox="0 0 24.625 24.62" fill="#ffffff">
+                          <path d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z" transform="translate(-920.688 -2641.72)"/>
+                        </svg>
+                        <span class="sr-only">Image link</span>
+                      </a>
+                      <button class="card__tools-zoom btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47" viewBox="0 0 25.157 24.47" fill="#ffffff">
+                          <path d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z" transform="translate(-974.781 -2641.19)"/>
+                        </svg>
+                        <span class="sr-only">Image zoom</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-left">
                   <h3 class="card-title">Consectetur adipisicing elit</h3>
-                  <small class="card-text">Photography, nature</small>
+                  <span class="card-text text-capitalize">Photography, nature</span>
                 </div>
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto mb-40">
               <div class="card">
-                <img class="card-img-top" src="img/pr-5.jpg" width="370" height="237" alt="Project 5">
-                <div class="card-body">
+                <div class="card__img-wrapper">
+                  <img class="img-fluid" src="img/pr-5.jpg"  alt="Project 5">
+                  <div class="card-img-overlay w-100 h-100">
+                    <div class="card__tools">
+                      <a class="card__tools-link" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.625" height="24.62" viewBox="0 0 24.625 24.62" fill="#ffffff">
+                          <path d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z" transform="translate(-920.688 -2641.72)"/>
+                        </svg>
+                        <span class="sr-only">Image link</span>
+                      </a>
+                      <button class="card__tools-zoom btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47" viewBox="0 0 25.157 24.47" fill="#ffffff">
+                          <path d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z" transform="translate(-974.781 -2641.19)"/>
+                        </svg>
+                        <span class="sr-only">Image zoom</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-left">
                   <h3 class="card-title">Modi nemo libero</h3>
-                  <small class="card-text">Graphic design, mock-up</small>
+                  <span class="card-text text-capitalize">Graphic design, mock-up</span>
                 </div>
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col-auto mb-40">
               <div class="card">
-                <img class="card-img-top" src="img/pr-6.jpg" width="370" height="237" alt="Project 6">
-                <div class="card-body">
+                <div class="card__img-wrapper">
+                  <img class="img-fluid" src="img/pr-6.jpg"  alt="Project 6">
+                  <div class="card-img-overlay w-100 h-100">
+                    <div class="card__tools">
+                      <a class="card__tools-link" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.625" height="24.62" viewBox="0 0 24.625 24.62" fill="#ffffff">
+                          <path d="M943.5,2643.49a6.208,6.208,0,0,0-8.743,0l-4.721,4.73a7.1,7.1,0,0,1,4.908.37l2.454-2.45a2.447,2.447,0,0,1,3.46,3.46l-3.085,3.09-2.028,2.02a2.438,2.438,0,0,1-3.46,0l-2.641,2.65a6.064,6.064,0,0,0,2.079,1.36,6.237,6.237,0,0,0,6.153-.9,4.686,4.686,0,0,0,.511-0.46l3.187-3.19,1.926-1.93A6.18,6.18,0,0,0,943.5,2643.49Zm-12.561,16.03-2.352,2.36a2.447,2.447,0,0,1-3.46-3.46l5.113-5.12a2.457,2.457,0,0,1,3.46,0l2.642-2.64a5.97,5.97,0,0,0-2.079-1.37,6.206,6.206,0,0,0-6.426,1.14,3.111,3.111,0,0,0-.239.23l-5.113,5.11a6.185,6.185,0,0,0,8.744,8.75l4.618-4.67C933.5,2660.39,932.949,2660.33,930.938,2659.52Z" transform="translate(-920.688 -2641.72)"/>
+                        </svg>
+                        <span class="sr-only">Image link</span>
+                      </a>
+                      <button class="card__tools-zoom btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.157" height="24.47" viewBox="0 0 25.157 24.47" fill="#ffffff">
+                          <path d="M985.3,2645.08a1.3,1.3,0,1,0,0,2.59,4.156,4.156,0,0,1,3.748,2.31,1.327,1.327,0,0,0,1.758.6,1.284,1.284,0,0,0,.607-1.73A6.756,6.756,0,0,0,985.3,2645.08Zm14.152,17.8-4.383-4.32a10.838,10.838,0,0,0,2.068-6.36,11.158,11.158,0,1,0-4.346,8.7l4.335,4.27a1.649,1.649,0,0,0,2.326,0A1.6,1.6,0,0,0,999.456,2662.88Zm-22.047-10.68a8.552,8.552,0,0,1,17.1,0,8.4,8.4,0,0,1-3.029,6.42A8.561,8.561,0,0,1,977.409,2652.2Z" transform="translate(-974.781 -2641.19)"/>
+                        </svg>
+                        <span class="sr-only">Image zoom</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-left">
                   <h3 class="card-title">Deleniti dolorem</h3>
-                  <small class="card-text">Photography, holiday</small>
+                  <span class="card-text text-capitalize">Photography, holiday</span>
                 </div>
               </div>
             </div>
           </div>
           <!-- Link -->
-          <a class="btn btn-dark" href="#">Load more</a>
+          <a class="custom__button btn text-light" role="button" href="#">Load more</a>
       </div>
       </section>
 
@@ -359,7 +467,7 @@
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
             <div class="col">
               <div class="card text-left">
-                <img class="card-img-top" src="img/post-1.jpg" alt="Post 1">
+                <img class="img-fluid" src="img/post-1.jpg" alt="Post 1">
                 <div class="card-body">
                   <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
                   <p class="card-text">Debitis repudiandae voluptas quod corporis, accusamus hic.</p>
@@ -369,7 +477,7 @@
             </div>
             <div class="col">
               <div class="card text-left">
-                <img class="card-img-top" src="img/post-2.jpg" alt="Post 1">
+                <img class="img-fluid" src="img/post-2.jpg" alt="Post 1">
                 <div class="card-body">
                   <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
                   <p class="card-text">Debitis repudiandae voluptas quod corporis, accusamus hic.</p>
@@ -379,7 +487,7 @@
             </div>
             <div class="col d-none d-lg-block">
               <div class="card text-left">
-                <img class="card-img-top" src="img/post-3.jpg" alt="Post 1">
+                <img class="img-fluid" src="img/post-3.jpg" alt="Post 1">
                 <div class="card-body">
                   <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
                   <p class="card-text">Debitis repudiandae voluptas quod corporis, accusamus hic.</p>
