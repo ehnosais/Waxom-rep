@@ -5,10 +5,11 @@
 body {
   min-width: 320px;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: $primary-font;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
+  color: $secondary-color;
 }
 
 // container-fluid
@@ -18,9 +19,38 @@ body {
 }
 
 // btn
+.btn {
+  padding: 10px 20px;
+}
+
 @media (min-width: 992px) {
   .btn {
     padding: 15px 35px;
+  }
+}
+
+// btn:active
+.btn-outline-secondary:not(:disabled):not(.disabled).active {
+  background-color: $theme-color;
+  border-color: $theme-color;
+}
+
+.btn-outline-secondary:hover {
+  background-color: $theme-color;
+  border-color: $theme-color;
+}
+
+// title
+.section-title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 30px;
   }
 }
 
@@ -71,7 +101,7 @@ body {
 /*                                 Top slider                                 */
 /* -------------------------------------------------------------------------- */
 
-/* ---------------------------- Carousel-caption ---------------------------- */
+/* -------------------------------- Carousel -------------------------------- */
 
 // carousel-caption
 .carousel-caption {
@@ -143,41 +173,49 @@ body {
   }
 }
 
-// carousel-caption__button
-.carousel-caption__button {
+// custom__button
+.custom__button {
   font-family: $secondary-font;
   font-size: 10px;
   line-height: 14px;
   font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
 
   background-color: $theme-color;
   border-color: $theme-color;
-  box-shadow: 0 2px 0 0 $theme-color-hover;
-}
+  box-shadow: 0 2px 0 0 $theme-color-active;
 
-@media (min-width: 992px) {
-  .carousel-caption__button {
-    box-shadow: 0 4px 0 0 $theme-color-hover;
+  &:hover,
+  &:focus {
+    background-color: $theme-color-hover;
+    border-color: $theme-color-hover;
+  }
+
+  &:active {
+    background-color: $theme-color-active;
+    border-color: $theme-color-active;
+    box-shadow: none;
   }
 }
 
-.carousel-caption__button:hover,
-.carousel-caption__button:focus {
-  background-color: $theme-color-hover;
-  border-color: $theme-color-hover;
-  box-shadow: none;
-}
-
-.carousel-caption__button:active {
-  background-color: $theme-color-active;
-  border-color: $theme-color-active;
-  box-shadow: none;
+@media (min-width: 992px) {
+  .custom__button {
+    font-size: 14px;
+    line-height: 18px;
+    box-shadow: 0 4px 0 0 $theme-color-active;
+  }
 }
 
 // carousel-control
 .carousel-control__icon {
   width: 20px;
   height: 40px;
+
+  &:hover,
+  &:focus {
+    fill: #998675;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -187,26 +225,129 @@ body {
   }
 }
 
-.carousel-control__icon:hover,
-.carousel-control__icon:focus {
-  fill: #998675;
-}
-
 // carousel-indicators
-.carousel-indicators li {
-  box-sizing: border-box;
-  width: 10px;
-  height: 10px;
+.carousel-indicators{
 
-  background-color: #ffffff;
-  border: none;
-  border-radius: 50%;
+    li {
+      box-sizing: border-box;
+      width: 10px;
+      height: 10px;
+
+      background-color: #ffffff;
+      border: none;
+      border-radius: 50%;
+    }
+
+    .active {
+      width: 14px;
+      height: 14px;
+
+      border: 2px solid $theme-color;
+      background-color: transparent;
+    }
 }
 
-.carousel-indicators li.active {
-  width: 14px;
-  height: 14px;
+/* -------------------------------- Services -------------------------------- */
 
-  border: 2px solid $theme-color;
-  background-color: transparent;
+// services__service-title
+.services__service-title {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 800;
+  color: $primary-color;
 }
+
+@media (min-width: 768px) {
+  .services__service-title {
+    font-size: 22px;
+  }
+}
+
+// services__item
+.services__item {
+
+  svg {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+
+    transform: translate(-50%, -100%);
+  }
+
+  &:hover,
+    &:focus {
+
+      &::after {
+        background-color: $theme-color-hover;
+      }
+
+      svg {
+        fill: $theme-color-hover;
+      }
+    }
+}
+
+@media (min-width: 992px) {
+  .services__item {
+
+    svg {
+      top: -25px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+
+      width: 70px;
+      height: 4px;
+
+      background-color: #f1eee9;
+
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* --------------------------------- Themes --------------------------------- */
+
+// themes
+.themes {
+  background-color: #fbfaf8;
+}
+
+.themes__text {
+  font-size: 16px;
+}
+
+// themes__footer
+.themes__footer {
+  background: linear-gradient(to right, #211b19, #4e3427);
+
+  p {
+    font-family: $secondary-font;
+    font-size: 28px;
+    font-weight: 400;
+    color: #ffffff;
+
+    span {
+      color: #c7b299;
+    }
+  }
+
+  small {
+    font-size: 18px;
+    color: #615855;
+  }
+
+}
+
+/* -------------------------------- Projects -------------------------------- */
+
+// projects__text
+.projects__text {
+  font-size: 16px;
+}
+
+
