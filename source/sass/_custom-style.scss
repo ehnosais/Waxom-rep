@@ -453,6 +453,7 @@ body {
 
   &:hover,
   &:focus {
+    text-decoration: none;
 
     svg {
       fill: $theme-color-hover;
@@ -469,6 +470,144 @@ body {
 
     svg {
       fill: $theme-color-hover;
+    }
+  }
+}
+
+/* ---------------------------------- Promo --------------------------------- */
+
+// promo__text
+.promo__text {
+  font-size: 16px;
+}
+
+// promo__item
+.promo__item {
+  position: relative;
+  padding-left: 50px;
+
+  font-size: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    width: 22px;
+    height: 22px;
+
+    background-image: url("../img/list-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+// promo__stats
+.promo__stats {
+  background: linear-gradient(to right, #211b19, #4e3427);
+}
+// promo__value
+.promo__value {
+  font-size: 30px;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .promo__value {
+    font-size: 48px;
+  }
+}
+
+// promo__parameter
+.promo__parameter {
+  color: #c7b299;
+  text-transform: uppercase;
+}
+
+// promo__row
+.promo__row {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+  }
+
+  &::before {
+    top: -10px;
+
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transform: translateY(-100%) translateX(-50%);
+  }
+
+  &::after {
+    bottom: -15px;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #ffffff;
+
+    transform: translateY(100%) translateX(-50%);
+  }
+
+  // icons
+
+  &--client {
+
+    &::before {
+      width: 44px;
+      height: 44px;
+
+      background-image: url("../img/client-icon.svg");
+    }
+  }
+
+  &--coffee {
+
+    &::before {
+      width: 48px;
+      height: 44px;
+
+      background-image: url("../img/coffe-icon.svg");
+    }
+  }
+
+  &--post {
+
+    &::before {
+      width: 44px;
+      height: 44px;
+
+      background-image: url("../img/post-icon.svg");
+    }
+  }
+
+  &--like {
+
+    &::before {
+      width: 44px;
+      height: 44px;
+
+      background-image: url("../img/heart-icon.svg");
+    }
+  }
+
+  &--launch {
+
+    &::before {
+      width: 54px;
+      height: 44px;
+
+      background-image: url("../img/launch-icon.svg");
     }
   }
 }

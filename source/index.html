@@ -240,7 +240,7 @@
             </div>
           </div>
           <!-- Projects cards -->
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center mb-10">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center mb-20">
             <div class="col-auto mb-40">
               <div class="card">
                 <div class="card__img-wrapper">
@@ -376,7 +376,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-auto mb-40">
+            <div class="col-auto">
               <div class="card">
                 <div class="card__img-wrapper">
                   <img class="img-fluid" src="img/pr-6.jpg"  alt="Project 6">
@@ -409,56 +409,60 @@
       </div>
       </section>
 
-      <!-- Section 'promo' -->
-      <section>
-        <h2 class="sr-only">Promo</h2>
+<!-- ---------------------------- Section promo ---------------------------- -->
+
+      <section class="promo mb-40 mb-lg-80">
         <!-- Presentation block -->
         <div class="container">
           <div class="row flex-column flex-md-row text-left">
-            <div class="col">
+            <div class="col-12 col-lg-5 order-2 order-lg-0 text-center align-self-end">
               <img class="img-fluid" src="img/mobile.png" alt="Waxon mobile version image">
             </div>
-            <div class="col">
-              <h3>Excellent for mobile devices.</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex saepe obcaecati necessitatibus eveniet cum ab assumenda laboriosam fuga rerum, laudantium repellendus tenetur voluptates provident incidunt. A eius ducimus exercitationem omnis ea amet voluptatibus porro natus.</p>
-              <ul>
-                <li>Ex saepe obcaecati necessitatibus eveniet</li>
-                <li>Laudantium repellendus tenetur voluptates</li>
-                <li>A eius ducimus exercitationem omnis</li>
-                <li>Ea amet voluptatibus porro natus</li>
+            <div class="col-12 col-lg-7 pt-0 pt-lg-50 pt-xl-100 mb-30 mb-lg-0">
+              <h2 class="section-title mb-15 mb-lg-30">Excellent for mobile devices.</h2>
+              <p class="promo__text mb-15 mb-lg-30">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex saepe obcaecati necessitatibus eveniet cum ab assumenda laboriosam fuga rerum, laudantium repellendus tenetur voluptates provident incidunt. A eius ducimus exercitationem omnis ea amet voluptatibus porro natus.</p>
+              <ul class="promo__list list-inline ml-0 ml-sm-50">
+                <li class="promo__item list-inline-item mb-5">Ex saepe obcaecati necessitatibus eveniet;</li>
+                <li class="promo__item list-inline-item mb-5">Laudantium repellendus tenetur voluptates;</li>
+                <li class="promo__item list-inline-item mb-5">A eius ducimus exercitationem omnis;</li>
+                <li class="promo__item list-inline-item">Ea amet voluptatibus porro natus</li>
               </ul>
             </div>
           </div>
         </div>
         <!-- Stats -->
-        <div class="bg-secondary">
-          <table class="table table-borderless text-light">
-            <tbody class="d-flex flex-column flex-md-row justify-content-center">
-              <tr class="d-flex flex-column">
-                <td>3587</td>
-                <td>Satisfied clients</td>
-              </tr>
-              <tr class="d-flex flex-column">
-                <td>207</td>
-                <td>Cups of coffee</td>
-              </tr>
-              <tr class="d-flex flex-column">
-                <td>2500</td>
-                <td>Blog posts</td>
-              </tr>
-              <tr class="d-flex flex-column">
-                <td>873</td>
-                <td>Likes</td>
-              </tr>
-              <tr class="d-flex flex-column">
-                <td>900</td>
-                <td>We launched</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="promo__stats pt-80 pb-30 pt-md-130 pb-md-80">
+          <div class="container">
+            <table class="table table-borderless text-light">
+              <tbody class="d-flex flex-wrap flex-column flex-md-row justify-content-center">
+                <tr class="promo__row promo__row--client d-flex flex-column mr-md-40 mb-110 mb-lg-0">
+                  <td class="promo__value py-0">3587</td>
+                  <td class="promo__parameter py-0">Satisfied clients</td>
+                </tr>
+                <tr class="promo__row promo__row--coffee d-flex flex-column mr-md-40 mb-110 mb-lg-0">
+                  <td class="promo__value py-0">207</td>
+                  <td class="promo__parameter py-0">Cups of coffee</td>
+                </tr>
+                <tr class="promo__row promo__row--post d-flex flex-column mr-md-40 mb-110 mb-lg-0">
+                  <td class="promo__value py-0">2500</td>
+                  <td class="promo__parameter py-0">Blog posts</td>
+                </tr>
+                <tr class="promo__row promo__row--like d-flex flex-column mr-md-40 mb-110 mb-md-0">
+                  <td class="promo__value py-0">873</td>
+                  <td class="promo__parameter py-0">Likes</td>
+                </tr>
+                <tr class="promo__row promo__row--launch d-flex flex-column">
+                  <td class="promo__value py-0">900</td>
+                  <td class="promo__parameter py-0">We launched</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
-      <!-- Section 'posts' -->
+
+<!-- ---------------------------- Section posts ---------------------------- -->
+
       <section>
         <div class="container">
           <h2>Recent posts.</h2>
@@ -511,6 +515,7 @@
           </div>
         </div>
       </section>
+
       <!-- Section 'partners' -->
       <section class="bg-secondary">
         <h2 class="sr-only">Partners</h2>
