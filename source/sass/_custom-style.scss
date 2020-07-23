@@ -370,15 +370,20 @@ body {
 }
 
 // card-title
-.card-title {
+.projects .card-title {
   font-family: $secondary-font;
   font-size: 20px;
   font-weight: 500;
   color: #c7b299;
 }
 
+// card-text
+.projects .card-text {
+  color: #d1d1d1;
+}
+
 // card
-.card {
+.projects .card {
   background-color: #fbfaf8;
   border: none;
 
@@ -408,7 +413,7 @@ body {
 }
 
 // card-body
-.card-body {
+.projects .card-body {
   position: relative;
 
   &::before {
@@ -433,7 +438,7 @@ body {
 }
 
 // card-img-overlay
-.card-img-overlay {
+.projects .card-img-overlay {
   display: none;
 
   background-color: rgba($color: #111111, $alpha: 0.7);
@@ -443,13 +448,14 @@ body {
 .card__tools {
   position: absolute;
   top: 53%;
-  left: 52%;
+  left: 50%;
 
   transform: translate(-50%, -50%);
 }
 
 // card__tools-link
 .card__tools-link {
+  margin-right: 20px;
 
   &:hover,
   &:focus {
@@ -463,7 +469,7 @@ body {
 
 // card__tools-zoom
 .card__tools-zoom {
-
+  padding: 0;
 
   &:hover,
   &:focus {
@@ -617,6 +623,119 @@ body {
 // posts__text
 .posts__text {
   font-size: 16px;
+}
+
+// card-title
+.posts .card-title {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 500;
+  color: #555555;
+}
+
+// card-link
+.posts .card-link {
+  position: relative;
+  color: #c7b299;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    right: -20px;
+
+    width: 0;
+    height: 0;
+
+    border: 5px solid transparent;
+    border-left-color: #c7b299;
+  }
+}
+
+// card
+.posts .card {
+  border-color: #f8f8f8;
+
+  &:hover,
+  &:focus {
+    background-color: #362f2d;
+
+    .card-title {
+      color: #c7b299;
+    }
+
+    .card-text {
+      color: #ffffff;
+    }
+
+    .card-img-overlay {
+      background-color: rgba($color: #111111, $alpha: 0.7);
+
+      .posts__number {
+        background-color: #c7b299;
+      }
+
+      .posts__month {
+        background-color: #a48d72;
+      }
+    }
+  }
+}
+
+// posts__date
+.posts__date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: 50px;
+}
+
+// posts__number
+.posts__number {
+  padding: 5px;
+  width: inherit;
+
+  font-size: 24px;
+  color: #ffffff;
+
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #363636;
+}
+
+// posts__month
+.posts__month {
+  padding: 5px;
+  width: inherit;
+
+  font-size: 12px;
+  color: #ffffff;
+
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #252525;
+}
+
+// posts__toggle
+.posts__toggle--prev {
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $theme-color-hover;
+    }
+  }
+}
+
+.posts__toggle--next {
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $theme-color-hover;
+    }
+  }
 }
 
 /* -------------------------------- Partners -------------------------------- */
