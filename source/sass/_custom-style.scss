@@ -122,15 +122,21 @@ body {
 /*                                    Main                                    */
 /* -------------------------------------------------------------------------- */
 
-/* -------------------------------------------------------------------------- */
-/*                                 Top slider                                 */
-/* -------------------------------------------------------------------------- */
+/* -------------------------------- Top Slider ------------------------------- */
 
-/* -------------------------------- Carousel -------------------------------- */
+// slider
+.slider {
+  min-width: 320px;
+  max-width: 1920px;
+}
 
 // carousel-item
 .carousel-item {
   height: 100vh;
+
+  img {
+    min-width: 100%;
+  }
 }
 
 // carousel-caption
@@ -309,6 +315,7 @@ body {
 
       &::after {
         background-color: $theme-color-hover;
+        transition: 1s;
       }
 
       svg {
@@ -420,11 +427,13 @@ body {
   &:hover,
   &:focus {
     background-color: #362f2d;
+    transition: 0.7s;
 
     .card-body {
 
       &::before {
         border-bottom-color: #362f2d;
+        transition: 0.7s;
       }
     }
 
@@ -437,7 +446,8 @@ body {
     }
 
     .card-img-overlay {
-      display: block;
+      visibility: visible;
+      opacity: 1;
     }
   }
 }
@@ -469,9 +479,10 @@ body {
 
 // card-img-overlay
 .projects .card-img-overlay {
-  display: none;
-
+  visibility: hidden;
+  opacity: 0;
   background-color: rgba($color: #111111, $alpha: 0.7);
+  transition: opacity 0.7s;
 }
 
 // card__tools
@@ -700,6 +711,7 @@ body {
 
     .card-img-overlay {
       background-color: rgba($color: #111111, $alpha: 0.7);
+      transition: 0.7s;
 
       .posts__number {
         background-color: #c7b299;
@@ -709,6 +721,7 @@ body {
         background-color: #a48d72;
       }
     }
+    transition: 0.7s;
   }
 }
 
@@ -958,3 +971,9 @@ body {
   }
 }
 
+/* ----------------------------------- JS ----------------------------------- */
+
+.js-back {
+  background-color: #111111;
+  transition: 1s;
+}
