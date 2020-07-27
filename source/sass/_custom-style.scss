@@ -90,6 +90,7 @@ body {
   font-style: normal;
   font-size: 34px;
   font-weight: 400;
+  color: #ffffff;
 }
 
 
@@ -747,3 +748,184 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+// page-footer
+.page-footer {
+  background-color: #191919;
+}
+
+/* ------------------------------ Links section ----------------------------- */
+
+// page-footer__links
+.page-footer__links {
+
+  p {
+    color: #555555;
+  }
+
+  hr {
+    background-color: #252525;
+  }
+}
+
+// page-footer__more
+.page-footer__more {
+  position: relative;
+
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: #c7b299;
+
+    &::after {
+      border-left-color: #c7b299;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    right: -20px;
+
+    width: 0;
+    height: 0;
+
+    border: 5px solid transparent;
+    border-left-color: #ffffff;
+  }
+}
+
+// page-footer__titles
+.page-footer__titles {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+
+  text-transform: capitalize;;
+}
+
+@media (min-width: 992px) {
+  .page-footer__titles {
+    font-size: 24px;
+  }
+}
+
+// page-footer__date
+.page-footer__date {
+  font-size: 12px;
+  color: #363636;
+}
+
+// page-footer__item
+.page-footer__item {
+
+  a {
+
+    &:hover {
+      text-decoration: none;
+
+      .page-footer__date {
+        color: #ffffff;
+      }
+
+      p {
+        color: #c7b299;
+      }
+    }
+  }
+}
+
+// page-footer__social-list
+.page-footer__social-list {
+
+  a {
+    color: #00bff3;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
+  }
+
+  time {
+    color: $primary-color;
+  }
+}
+
+/* ------------------------- Copyright section ------------------------- */
+
+// page-footer__copyright
+.page-footer__copyright {
+  background-color: #111111;
+
+  ul,
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #c7b299;
+    }
+  }
+}
+
+// page-footer__copyright-list
+@media (min-width: 576px) {
+  .page-footer__copyright-list {
+
+    li:not(:last-child) {
+      position: relative;
+      margin-right: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -10px;
+
+        width: 1px;
+        height: 12px;
+
+        background-color: #ffffff;
+
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+// page-footer__copyright-author
+@media (min-width: 576px) {
+  .page-footer__copyright-author {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -10px;
+
+      width: 1px;
+      height: 12px;
+
+      background-color: #ffffff;
+
+      transform: translateY(-50%);
+    }
+  }
+}
+
