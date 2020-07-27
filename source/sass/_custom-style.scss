@@ -62,12 +62,10 @@ body {
 /* ------------------------------- Page-header ------------------------------ */
 
 // page-header
-@media (min-width: 992px) {
-  .page-header {
-    position: absolute;
-    width: 100%;
-    z-index: 30;
-  }
+.page-header {
+  position: absolute;
+  width: 100%;
+  z-index: 30;
 }
 
 
@@ -75,13 +73,7 @@ body {
 
 // navbar
 .navbar {
-  background-color: #000000;
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    background-color: transparent;
-  }
+  background-color: transparent;
 }
 
 // navbar-brand
@@ -135,6 +127,11 @@ body {
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------- Carousel -------------------------------- */
+
+// carousel-item
+.carousel-item {
+  height: 100vh;
+}
 
 // carousel-caption
 .carousel-caption {
