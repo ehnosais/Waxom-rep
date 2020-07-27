@@ -93,6 +93,38 @@ body {
   color: #ffffff;
 }
 
+// nav-link
+.nav-link {
+
+  &:hover,
+  &:focus {
+    color: $theme-color-hover !important;
+  }
+}
+
+// navbar__user
+.navbar__user-cart {
+
+  &:hover,
+  &:focus {
+
+    svg {
+      fill: $theme-color-hover ;
+    }
+  }
+}
+
+.navbar__user-search {
+
+  &:hover,
+  &:focus {
+
+    svg {
+      fill: $theme-color-hover ;
+    }
+  }
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                    Main                                    */
