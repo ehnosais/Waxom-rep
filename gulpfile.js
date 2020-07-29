@@ -84,18 +84,26 @@ gulp.task('copy', function () {
 
 // image optimize
 gulp.task('resize', function () {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/test/*.{png,jpg}')
+    .pipe(imageResize({
+      percentage: 62.5
+    }))
+    .pipe(rename(function (path) {
+      path.basename += "-1200w";
+    }))
+    .pipe(gulp.dest('source/img/test/pic/'))
+
     .pipe(imageResize({
       percentage: 200
     }))
     .pipe(rename(function (path) {
       path.basename += "@2x";
      }))
-    .pipe(gulp.dest('source/img/'));
+     .pipe(gulp.dest('source/img/test/pic/'));
 });
 
 gulp.task('images', function() {
-  return gulp.src('source/img/**/*')
+  return gulp.src('source/img/test/pic/*')
     .pipe(imagemin([
       imageminJpegRecompress({
         loops: 5,
@@ -108,13 +116,13 @@ gulp.task('images', function() {
       pngquant({quality: [0.75, 0.8],speed: 5}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('source/img/'));
+    .pipe(gulp.dest('source/img/test/pic/'));
 });
 
 gulp.task('webp', function () {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/test/pic/*.{png,jpg}')
     .pipe(webp({quality: 75}))
-    .pipe(gulp.dest('source/img'));
+    .pipe(gulp.dest('source/img/test/pic/'));
 });
 // common img optim
 gulp.task('imgOptim', gulp.series('resize', 'images', 'webp'));

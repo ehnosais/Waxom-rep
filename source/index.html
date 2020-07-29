@@ -102,8 +102,16 @@
         <div class="carousel slide carousel-fade" id="headerSlider" data-ride="carousel" data-interval="false">
           <!-- Slides -->
           <div class="carousel-inner">
+            <!-- Slide 1 -->
             <div class="carousel-item active">
-              <img class="h-100" src="img/header-slide-1.jpg" alt="Slide 1">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-1-1920w.webp 1x, img/header-slide-1-1920w@2x.webp 2x" >
+                <source media="(min-width: 1200px)" srcset="img/header-slide-1-1920w.jpg 1x, img/header-slide-1-1920w@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-1-1200w.webp 1x, img/header-slide-1-1200w@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/header-slide-1-1200w.jpg 1x, img/header-slide-1-1200w@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/header-slide-1-768w.webp 1x, img/header-slide-1-768w@2x.webp 2x">
+                <img class="h-100" src="img/header-slide-1-768w.jpg" srcset="img/header-slide-1-768w@2x.jpg 2x" alt="Slide 1">
+              </picture>
               <div class="carousel-caption">
                 <span class="carousel-caption__pre-title d-none d-md-block">Unique and modern design</span>
                 <h3 class="carousel-caption__title mb-5 mb-sm-0">Portfolio <br class="d-md-none"> PSD template</h3>
@@ -111,8 +119,16 @@
                 <a class="custom__button btn" role="button">Get started</a>
               </div>
             </div>
+            <!-- Slide 2 -->
             <div class="carousel-item">
-              <img class="h-100 w-auto" src="img/header-slide-2.jpg" alt="Slide 2">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-2-1920w.webp 1x, img/header-slide-2-1920w@2x.webp 2x" >
+                <source media="(min-width: 1200px)" srcset="img/header-slide-2-1920w.jpg 1x, img/header-slide-2-1920w@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-2-1200w.webp 1x, img/header-slide-2-1200w@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/header-slide-2-1200w.jpg 1x, img/header-slide-2-1200w@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/header-slide-2-768w.webp 1x, img/header-slide-2-768w@2x.webp 2x">
+                <img class="h-100" src="img/header-slide-2-768w.jpg" srcset="img/header-slide21-768w@2x.jpg 2x" alt="Slide 2">
+              </picture>
               <div class="carousel-caption">
                 <span class="carousel-caption__pre-title d-none d-md-block">Unique and modern design</span>
                 <h3 class="carousel-caption__title mb-5 mb-sm-0">Portfolio <br class="d-md-none"> PSD template</h3>
@@ -120,8 +136,16 @@
                 <a class="custom__button btn" role="button">Get started</a>
               </div>
             </div>
+            <!-- Slide 3 -->
             <div class="carousel-item">
-              <img class="h-100 w-auto" src="img/header-slide-3.jpg" alt="Slide 3">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-3-1920w.webp 1x, img/header-slide-3-1920w@2x.webp 2x" >
+                <source media="(min-width: 1200px)" srcset="img/header-slide-3-1920w.jpg 1x, img/header-slide-3-1920w@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-3-1200w.webp 1x, img/header-slide-3-1200w@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/header-slide-3-1200w.jpg 1x, img/header-slide-3-1200w@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/header-slide-3-768w.webp 1x, img/header-slide-3-768w@2x.webp 2x">
+                <img class="h-100" src="img/header-slide-3-768w.jpg" srcset="img/header-slide-3-768w@2x.jpg 2x" alt="Slide 3">
+              </picture>
               <div class="carousel-caption">
                 <span class="carousel-caption__pre-title d-none d-md-block">Unique and modern design</span>
                 <h3 class="carousel-caption__title mb-5 mb-sm-0">Portfolio <br class="d-md-none"> PSD template</h3>
@@ -197,7 +221,11 @@
           <h2 class="section-title">Waxom is <span class=" text-capitalize">realization</span> of your <span class=" text-capitalize">ideas</span>.</h2>
           <p class="themes__text mb-30">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, excepturi?</p>
           <div>
-            <img class="img-fluid" src="img/browser-theme.png" alt="Theme slide 3">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/browser-theme-1920w.png">
+              <source media="(min-width: 768px)" srcset="img/browser-theme-1200w.png">
+              <img class="img-fluid" src="img/browser-theme-768w.png" alt="Theme image">
+            </picture>
           </div>
         </div>
         <div class="themes__footer py-20 py-lg-50">
@@ -233,7 +261,7 @@
               <button class="projects__btn btn btn-outline-secondary mb-10 mb-lg-0 text-capitalize w-100" type="button">Mobile app</button>
             </div>
             <div class="col-auto">
-              <button class="projects__btn btn btn-outline-secondary  text-capitalizemb-10 mb-lg-0 w-100" type="button">Illustration</button>
+              <button class="projects__btn btn btn-outline-secondary text-capitalize align-items-md-center mb-10 mb-lg-0 w-100" type="button">Illustration</button>
             </div>
             <div class="col-auto">
               <button class="projects__btn btn btn-outline-secondary text-capitalize w-100" type="button">Photography</button>
@@ -591,7 +619,7 @@
       <div class="row flex-column flex-md-row text-light">
         <!-- Waxom -->
         <div class="col mb-30 mb-md-0">
-          <a class="d-flex align-items-center mb-25 text-decoration-none" href="#">
+          <a class="d-flex align-items-center justify-content-center justify-content-md-start mb-25 text-decoration-none" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.031" height="55.125" viewBox="0 0 63.031 55.125" fill="#fff">
               <path d="M413.108,50.713H402.6l5.254,9.191Zm-11.822.767-5.254,9.191H406.54Zm18.39,9.191-5.254-9.191-5.254,9.191h10.508ZM409.168,62.2l5.254,9.188,5.254-9.188H409.168Zm-13.136,0,5.254,9.188L406.54,62.2H396.032Zm-6.567,9.952h10.506l-5.253-9.187Zm36.778,0-5.253-9.187-5.252,9.187h10.5Zm-18.389-32.16-5.254,9.19h10.508ZM420.99,82.874l5.253-9.188h-10.5Zm-26.272,0,5.253-9.188H389.465Zm-11.821.767H393.4l-5.253-9.19Zm49.914,0-5.254-9.19-5.254,9.19h10.508ZM422.3,85.172l5.254,9.187,5.254-9.187H422.3Zm-13.135,0,5.254,9.187,5.254-9.187H409.168Zm-21.017,9.187,5.253-9.187H382.9Zm-11.82.769h10.5l-5.254-9.188Zm26.269,0h10.508l-5.254-9.188Zm13.138,0h10.5l-5.253-9.188Zm18.387-9.188-5.252,9.188h10.5Z" transform="translate(-376.344 -40)"/>
             </svg>
@@ -602,7 +630,7 @@
         </div>
         <!-- Posts -->
         <div class="col pt-md-20 mb-30 mb-md-0">
-          <h3 class="page-footer__titles mb-25">Recent posts</h3>
+          <h3 class="page-footer__titles mb-25 text-center text-md-left">Recent posts</h3>
           <ul class="list-inline">
             <li class="page-footer__item list-inline-item">
               <a href="#">
@@ -628,7 +656,7 @@
         </div>
         <!-- Social -->
         <div class="col pt-md-20 mb-30 mb-md-0">
-          <h3 class="page-footer__titles mb-25">Our Twitter</h3>
+          <h3 class="page-footer__titles mb-25 text-center text-md-left">Our Twitter</h3>
           <ul class="page-footer__social-list list-inline">
             <li>
               <p class="mb-10"><a href="#">@waxom</a> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -647,7 +675,7 @@
           </ul>
         </div>
         <!-- Widget -->
-        <div class="col pt-md-20">
+        <div class="col pt-md-20 text-center text-md-left">
           <h3 class="page-footer__titles mb-25">Dribble widget</h3>
           <a href="#">
             <img class="img-fluid" src="img/widget.png" alt="Widget image">

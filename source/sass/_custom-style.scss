@@ -785,10 +785,34 @@ body {
 
 // partners
 .partners {
-  background-image: url("../img/maountain-back.jpg");
+  background-image: url("../img/mountain-back-768w.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/mountain-back-768w@2x.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .partners {
+    background-image: url("../img/mountain-back-1200w.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/mountain-back-1200w@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .partners {
+    background-image: url("../img/mountain-back-1920w.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/mountain-back-1920w@2x.jpg");
+    }
+  }
 }
 
 
@@ -975,5 +999,5 @@ body {
 
 .js-back {
   background-color: #111111;
-  transition: 1s;
+  transition: 0.6s;
 }
